@@ -17,13 +17,14 @@ public class User {
     private String email;
     private String password;
     private String role;
-
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
     private List <Question> questions = new ArrayList <> ();
-
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
+    private List <Notification> notifications = new ArrayList <> ();
     @OneToMany
     @JsonIgnore
-    private List <Answer> answers;
+    private List <Answer> answers = new ArrayList <> ();
+
 
     public User() {
     }
@@ -96,5 +97,13 @@ public class User {
 
     public void setAnswers(List <Answer> answers) {
         this.answers = answers;
+    }
+
+    public List <Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List <Notification> notifications) {
+        this.notifications = notifications;
     }
 }

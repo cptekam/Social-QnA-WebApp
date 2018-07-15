@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.upgrad.model.User;
 
+import java.util.List;
+
 @Repository
 public interface UserRepository extends CrudRepository <User, Integer> {
     @Transactional
@@ -28,5 +30,10 @@ public interface UserRepository extends CrudRepository <User, Integer> {
 
     @Query(nativeQuery = true, value = "SELECT role from users WHERE UPPER(userName) = UPPER(?1)")
     String findUserRoleByName(String userName);
+
+    @Query(nativeQuery = true, value = "SELECT * FROM  notification q JOIN users u ON q.user_id = u.id WHERE q.user_id = ?1")
+    List <User> getAllNotification(Integer user_id);
+
+    ;
 
 }
