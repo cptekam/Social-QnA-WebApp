@@ -20,6 +20,10 @@ public class AnswerServiceImp implements AnswerService {
     public List <Answer> getAllAnswersByLikes(Integer questionId) {
         return  answerRepository.getAllAnswersByLikes(questionId);;
     }
+     Integer deleteAnswer (Integer answerId) {
+         answerRepository.deleteAnswer(answerId);
+         return  answerId;
+     }
 
     @Override
     public Integer findUserIdfromAnswer(Integer answerId) {
