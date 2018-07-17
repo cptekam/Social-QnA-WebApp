@@ -8,7 +8,9 @@ import java.util.List;
 @Service
 public class AnswerServiceImp implements AnswerService {
 
-
+    @Autowired
+    private AnswerRepository  answerRepository;
+    
     @Override
     public List <Answer> getAllAnswersToQuestion(Integer questionId) {
         return null;
@@ -16,7 +18,7 @@ public class AnswerServiceImp implements AnswerService {
 
     @Override
     public List <Answer> getAllAnswersByLikes(Integer questionId) {
-        return null;
+        return  answerRepository.getAllAnswersByLikes(questionId);;
     }
 
     @Override
