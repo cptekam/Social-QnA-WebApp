@@ -7,8 +7,10 @@ import java.util.List;
 
 @Service
 public class QuestionServiceImp implements QuestionService {
+    @Autowired
+    private QuestionRepository questionRepository;
     @Override
     public List <Question> getAllQuestionsByCategory(Integer categoryId) {
-        return null;
+        return questionRepository.getAllQuestionsByCategory(categoryId);
     }
 }
