@@ -24,6 +24,11 @@ public class UserServicesImp implements UserService {
     }
 
     @Override
+    public int findRecentUserId(String userName) {
+        return userRepository.findRecentUserId ( userName );
+    }
+
+    @Override
     public String findUserByUsername(String userName) {
         String uName = userRepository.findUserByName ( userName );
         return uName;

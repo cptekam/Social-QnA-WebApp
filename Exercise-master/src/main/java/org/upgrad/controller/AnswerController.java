@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.upgrad.model.User;
 import org.upgrad.services.AnswerService;
+import org.upgrad.services.UserService;
 
 import javax.servlet.http.HttpSession;
 
@@ -16,7 +17,8 @@ import javax.servlet.http.HttpSession;
 public class AnswerController {
 
     private final AnswerService answerService;
-
+    @Autowired
+    private UserService userService;
     @Autowired
     public AnswerController(AnswerService answerService) {
         this.answerService = answerService;
@@ -51,15 +53,17 @@ public class AnswerController {
     @DeleteMapping("/api/answer/{answerId}")
     public ResponseEntity <?> deleteAnswer(@PathVariable("answerId") Integer answerId, HttpSession session) {
         User loggedInUser = (User) session.getAttribute ( "currUser" );
+        System.out.println ( loggedInUser );
         if (loggedInUser == null) {
             return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.UNAUTHORIZED );
         } else {
             //remaining check ser who created the question to implement
-            if (!loggedInUser.getRole ().equalsIgnoreCase ( "admin" )) {
-
-                return new ResponseEntity <> ( "You do not have rights to delete this answer.", HttpStatus.UNAUTHORIZED );
-            } else {
+            if ((loggedInUser.getRole ().equalsIgnoreCase ( "admin" )) || (userService.findRecentUserId ( loggedInUser.getUserName () ) == answerService.findUserIdfromAnswer ( answerId ))) {
+                answerService.deleteAnswer ( answerId );
                 return new ResponseEntity <> ( " Answer with answerId " + answerService.findUserIdfromAnswer ( answerId ) + " deleted successfully.", HttpStatus.OK );
+
+            } else {
+                return new ResponseEntity <> ( "You do not have rights to delete this answer.", HttpStatus.UNAUTHORIZED );
             }
         }
     }

@@ -33,11 +33,11 @@ public class AnswerControllerTest {
     protected MockHttpSession session;
     @Autowired
     private MockMvc mvc;
-//
+    //
 //    @MockBean
 //    private UserService userService;
-@MockBean
-private AnswerService answerService;
+    @MockBean
+    private AnswerService answerService;
 //
 //    @MockBean
 //    private QuestionService questionService;

@@ -1,7 +1,12 @@
 package org.upgrad.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Category {
@@ -10,6 +15,10 @@ public class Category {
     private int id;
     private String title;
     private String description;
+
+    @ManyToMany(mappedBy = "categories")
+    @JsonIgnore
+    private Set <Question> questions = new HashSet <> ();
 
     public Category() {
     }
@@ -43,5 +52,13 @@ public class Category {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Set <Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(Set <Question> questions) {
+        this.questions = questions;
     }
 }

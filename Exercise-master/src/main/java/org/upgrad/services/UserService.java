@@ -6,6 +6,8 @@ public interface UserService {
 
     int findUserId();
 
+    int findRecentUserId(String userName);
+
     String findUserByUsername(String userName);
 
     String findUserByEmail(String email);

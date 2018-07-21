@@ -61,14 +61,16 @@ public class UserController {
         String sha256hex = Hashing.sha256 ().hashString ( password, Charsets.US_ASCII ).toString ();
         if (!(passwordByUser.equalsIgnoreCase ( sha256hex ))) {
             return new ResponseEntity <> ( "Invalid Credentials", HttpStatus.UNAUTHORIZED );
-        } else if (String.valueOf ( userService.findUserRole ( userName ) ).equalsIgnoreCase ( "admin" )) {
-            User user = new User ( userName );
-            session.setAttribute ( "currUser", user );
-            return new ResponseEntity <> ( "You have logged in as admin!", HttpStatus.OK );
         } else {
+            String userRole = userService.findUserRole ( userName );
             User user = new User ( userName );
+            user.setRole ( userRole );
             session.setAttribute ( "currUser", user );
-            return new ResponseEntity <> ( "You have logged in successfully!", HttpStatus.OK );
+            if (String.valueOf ( userRole ).equalsIgnoreCase ( "admin" )) {
+                return new ResponseEntity <> ( "You have logged in as admin!", HttpStatus.OK );
+            } else {
+                return new ResponseEntity <> ( "You have logged in successfully!", HttpStatus.OK );
+            }
         }
     }
 

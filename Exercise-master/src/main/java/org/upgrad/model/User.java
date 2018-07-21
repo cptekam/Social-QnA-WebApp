@@ -1,17 +1,31 @@
 package org.upgrad.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-public class User {
+@Table(name = "users")
+public class User implements Serializable {
 
     @Id
     private int id;
+    @Column(name = "username")
     private String userName;
     private String email;
     private String password;
     private String role;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
+    private List <Question> questions = new ArrayList <> ();
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
+    private List <Notification> notifications = new ArrayList <> ();
+    @OneToMany
+    @JsonIgnore
+    private List <Answer> answers = new ArrayList <> ();
+
 
     public User() {
     }
@@ -68,5 +82,34 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public List <Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List <Question> questions) {
+        this.questions = questions;
+    }
+
+    public List <Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List <Answer> answers) {
+        this.answers = answers;
+    }
+
+    public List <Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List <Notification> notifications) {
+        this.notifications = notifications;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", userName='" + userName + '\'' + ", email='" + email + '\'' + ", password='" + password + '\'' + ", role='" + role + '\'' + ", questions=" + questions + ", notifications=" + notifications + ", answers=" + answers + '}';
     }
 }

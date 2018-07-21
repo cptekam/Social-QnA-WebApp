@@ -9,5 +9,7 @@ public interface AnswerService {
 
     List <Answer> getAllAnswersByLikes(Integer questionId);
 
-    Integer findUserIdfromAnswer(Integer answerId);
+    int findUserIdfromAnswer(int answerId);
+
+    void deleteAnswer(Integer answerId);
 }
