@@ -80,6 +80,7 @@ public class UserController {
             return new ResponseEntity <> ( "You are currently not logged in", HttpStatus.UNAUTHORIZED );
         else {
             session.removeAttribute ( "currUser" );
+            session.invalidate ();
             return new ResponseEntity <> ( "You have logged out successfully!", HttpStatus.OK );
         }
     }

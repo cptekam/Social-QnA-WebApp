@@ -15,6 +15,9 @@ public class CategoryServiceImp implements CategoryService {
 
     public Category createCategory(Category category) {
         return null;
+    public void createCategory(Category category) {
+        categoryRepository.addCategory ( category.getTitle (), category.getDescription () );
+
     }
 
     @Override

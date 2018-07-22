@@ -1,5 +1,7 @@
 package org.upgrad.services;
 
+import org.upgrad.model.User;
+
 public interface UserService {
 
     void addUserDetails(String userName, String email, String password, String role);
@@ -15,4 +17,7 @@ public interface UserService {
     String findUserPassword(String userName);
 
     String findUserRole(String userName);
+
+    User getUserDetail(Integer user_id);
+
 }

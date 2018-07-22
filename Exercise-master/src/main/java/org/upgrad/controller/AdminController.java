@@ -30,10 +30,13 @@ public class AdminController {
         } else {
 
             if (currUser.getRole ().equals ( "admin" )) {
+            System.out.println ( "role : " + currUser.getRole () );
+            if (currUser.getRole ().equalsIgnoreCase ( "admin" )) {
                 int id = (int) System.currentTimeMillis () / 1000;
                 Category newCategory = new Category ( id, categoryTitle, description );
 
                 //call  service method to add new category into repository
+                categoryService.createCategory ( newCategory );
 
                 return new ResponseEntity <> ( newCategory.getTitle () + " category added successfully.", HttpStatus.OK );
 

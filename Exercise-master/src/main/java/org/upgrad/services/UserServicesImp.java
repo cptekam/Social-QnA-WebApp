@@ -1,7 +1,9 @@
 package org.upgrad.services;
 
 import org.springframework.stereotype.Service;
+import org.upgrad.model.User;
 import org.upgrad.repository.UserRepository;
+import java.util.Optional;
 
 @Service
 public class UserServicesImp implements UserService {
@@ -32,6 +34,7 @@ public class UserServicesImp implements UserService {
     public String findUserByUsername(String userName) {
         String uName = userRepository.findUserByName ( userName );
         return uName;
+
     }
 
     @Override
@@ -48,6 +51,16 @@ public class UserServicesImp implements UserService {
     @Override
     public String findUserRole(String userName) {
         return userRepository.findUserRoleByName ( userName );
+    }
+
+    @Override
+    public User getUserDetail(Integer user_id) {
+        Optional <User> optionalUser = userRepository.findById ( user_id );
+        User user = null;
+        if (optionalUser.isPresent ()) {
+            user = optionalUser.get ();
+        }
+        return user;
     }
 
 }
