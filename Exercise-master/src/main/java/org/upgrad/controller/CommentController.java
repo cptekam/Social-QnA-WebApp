@@ -46,7 +46,6 @@ public class CommentController {
             return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.UNAUTHORIZED );
 
         } else {
-
             if (currUser.getRole ().equalsIgnoreCase ( "admin" ) || (currUser.getId () == commentService.findUserIdfromComment ( commentId ))) {
                 return new ResponseEntity <> ( "Comment with commentId " + commentId + " edited successfully.", HttpStatus.OK );
             } else {
@@ -55,14 +54,26 @@ public class CommentController {
         }
     }
 
-/*
-    @DeleteMapping("/api/comment/{commentId}")
-    public ResponseEntity <?> deleteCommen(){
 
+    @DeleteMapping("/api/comment/{commentId}")
+    public ResponseEntity <?> deleteCommen(@PathVariable("commentId") Integer commentId, HttpSession session) {
+        User currUser = (User) session.getAttribute ( "currUser" );
+        if (currUser == null) {
+            return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.UNAUTHORIZED );
+
+        } else {
+            if (currUser.getRole ().equalsIgnoreCase ( "admin" ) || (currUser.getId () == commentService.findUserIdfromComment ( commentId ))) {
+                return new ResponseEntity <> ( "Comment with commentId " + commentId + " deleted successfully.", HttpStatus.OK );
+            } else {
+                return new ResponseEntity <> ( "You do not have rights to delete this comment!", HttpStatus.UNAUTHORIZED );
+            }
+        }
     }
 
-    @GetMapping("/api/comment/all/{answerId}")
-    public ResponseEntity <?> getAllCommentsByAnswer (){
 
-    }*/
+//
+//    @GetMapping("/api/comment/all/{answerId}")
+//    public ResponseEntity <?> getAllCommentsByAnswer (){
+//
+//    }
 }

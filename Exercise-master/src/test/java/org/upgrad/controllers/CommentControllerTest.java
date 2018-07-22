@@ -18,8 +18,7 @@ import org.upgrad.services.CommentService;
 import org.upgrad.services.NotificationService;
 import org.upgrad.services.UserService;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -127,7 +126,7 @@ public class CommentControllerTest {
         String url = "/api/comment/1";
         mvc.perform ( put ( url ).session ( session ).param ( "comment", com ).param ( "commentId", commentId ) ).andExpect ( status ().is2xxSuccessful () ).andExpect ( content ().string ( Matchers.containsString ( "Comment with commentId " + commentId + " edited successfully." ) ) );
     }
-/*
+
     @Test
     public void deleteCommentWithoutLogin() throws Exception{
         session = new MockHttpSession();
@@ -140,6 +139,7 @@ public class CommentControllerTest {
                 .andExpect(status().is4xxClientError())
                 .andExpect(content().string(Matchers.containsString("Please Login first to access this endpoint!")));
     }
+
 
     @Test
     public void deleteCommentWithoutAuthorization() throws Exception{
@@ -171,8 +171,7 @@ public class CommentControllerTest {
         String url = "/api/comment/1";
         mvc.perform(delete(url).session(session)
                 .param("commentId",commentId))
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(content().string(Matchers.containsString(" Comment with commentId " +commentId+ " deleted successfully.")));
+                .andExpect(status().is2xxSuccessful()).andExpect ( content ().string ( Matchers.containsString ( "Comment with commentId " + commentId + " deleted successfully." ) ) );
     }
 
     @Test
@@ -191,43 +190,42 @@ public class CommentControllerTest {
         String url = "/api/comment/1";
         mvc.perform(delete(url).session(session)
                 .param("commentId",commentId))
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(content().string(Matchers.containsString(" Comment with commentId " +commentId+ " deleted successfully.")));
+                .andExpect(status().is2xxSuccessful()).andExpect ( content ().string ( Matchers.containsString ( "Comment with commentId " + commentId + " deleted successfully." ) ) );
     }
 
 
-    @Test
-    public void allCommentsWithoutLogin() throws Exception{
-        session = new MockHttpSession();
-        session.setAttribute("currUser", null);
-        String answerId ="1";
-        String url = "/api/comment/all/1";
-        mvc.perform(get(url).session(session)
-                .param("answerId",answerId))
-                .andExpect(status().is4xxClientError())
-                .andExpect(content().string(Matchers.containsString("Please Login first to access this endpoint!")));
-    }
+//    @Test
+//    public void allCommentsWithoutLogin() throws Exception{
+//        session = new MockHttpSession();
+//        session.setAttribute("currUser", null);
+//        String answerId ="1";
+//        String url = "/api/comment/all/1";
+//        mvc.perform(get(url).session(session)
+//                .param("answerId",answerId))
+//                .andExpect(status().is4xxClientError())
+//                .andExpect(content().string(Matchers.containsString("Please Login first to access this endpoint!")));
+//    }
+//
+//    @Test
+//    public void allCommentsWithLogin() throws Exception{
+//        User user = new User();
+//        user.setUserName("upgrad");
+//        user.setRole("user");
+//        Comment comment = new Comment();
+//        comment.setContent("good");
+//        List<Comment> allComments = singletonList(comment);
+//        session = new MockHttpSession();
+//        session.setAttribute("currUser", user);
+//        String answerId ="1";
+//        given(commentService.getAllComments(1)).willReturn(allComments);
+//        String url = "/api/comment/all/1";
+//        mvc.perform(get(url).session(session)
+//                .param("answerId",answerId)
+//                .contentType(MediaType.asMediaType(APPLICATION_JSON)))
+//                .andExpect(status().is2xxSuccessful())
+//                .andExpect(jsonPath("$", hasSize(1)))
+//                .andExpect(jsonPath("$[0].content", Matchers.is(comment.getContent())));
+//    }
 
-    @Test
-    public void allCommentsWithLogin() throws Exception{
-        User user = new User();
-        user.setUserName("upgrad");
-        user.setRole("user");
-        Comment comment = new Comment();
-        comment.setContent("good");
-        List<Comment> allComments = singletonList(comment);
-        session = new MockHttpSession();
-        session.setAttribute("currUser", user);
-        String answerId ="1";
-        given(commentService.getAllComments(1)).willReturn(allComments);
-        String url = "/api/comment/all/1";
-        mvc.perform(get(url).session(session)
-                .param("answerId",answerId)
-                .contentType(MediaType.asMediaType(APPLICATION_JSON)))
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].content", Matchers.is(comment.getContent())));
-    }
-*/
 
 }
