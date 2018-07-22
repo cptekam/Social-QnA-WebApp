@@ -71,9 +71,14 @@ public class CommentController {
     }
 
 
-//
-//    @GetMapping("/api/comment/all/{answerId}")
-//    public ResponseEntity <?> getAllCommentsByAnswer (){
-//
-//    }
+    @GetMapping("/api/comment/all/{answerId}")
+    public ResponseEntity <?> getAllCommentsByAnswer(@PathVariable("answerId") Integer answerId, HttpSession session) {
+        User currUser = (User) session.getAttribute ( "currUser" );
+        if (currUser == null) {
+            return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.UNAUTHORIZED );
+
+        } else {
+            return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.OK );
+        }
+    }
 }

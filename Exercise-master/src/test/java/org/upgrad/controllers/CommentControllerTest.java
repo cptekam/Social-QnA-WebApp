@@ -194,17 +194,14 @@ public class CommentControllerTest {
     }
 
 
-//    @Test
-//    public void allCommentsWithoutLogin() throws Exception{
-//        session = new MockHttpSession();
-//        session.setAttribute("currUser", null);
-//        String answerId ="1";
-//        String url = "/api/comment/all/1";
-//        mvc.perform(get(url).session(session)
-//                .param("answerId",answerId))
-//                .andExpect(status().is4xxClientError())
-//                .andExpect(content().string(Matchers.containsString("Please Login first to access this endpoint!")));
-//    }
+    @Test
+    public void allCommentsWithoutLogin() throws Exception {
+        session = new MockHttpSession ();
+        session.setAttribute ( "currUser", null );
+        String answerId = "1";
+        String url = "/api/comment/all/1";
+        mvc.perform ( get ( url ).session ( session ).param ( "answerId", answerId ) ).andExpect ( status ().is4xxClientError () ).andExpect ( content ().string ( Matchers.containsString ( "Please Login first to access this endpoint!" ) ) );
+    }
 //
 //    @Test
 //    public void allCommentsWithLogin() throws Exception{
