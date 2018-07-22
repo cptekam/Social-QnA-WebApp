@@ -19,6 +19,7 @@ public class AnswerController {
     private final AnswerService answerService;
     @Autowired
     private UserService userService;
+
     @Autowired
     public AnswerController(AnswerService answerService) {
         this.answerService = answerService;

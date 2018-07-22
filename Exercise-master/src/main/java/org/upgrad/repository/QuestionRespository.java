@@ -14,7 +14,6 @@ public interface QuestionRespository extends CrudRepository <Question, Integer> 
     List <Question> getAllQuestions();
 
 
-//    @Query(nativeQuery = true, value = "SELCT * FROM questiion q INNER JOIN questiion_category qc ON q.id = " +
-//            " qc.question_id where qc.category_id = ?1")
-//     List <Question> getAllQuestionsByCategory(Integer categoryId);
+    @Query(nativeQuery = true, value = "SELCT * FROM questiion q INNER JOIN questiion_category qc ON q.id = " + " qc.question_id where qc.category_id = ?1")
+    List <Question> getAllQuestionsByCategory(Integer categoryId);
 }

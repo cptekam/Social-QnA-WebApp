@@ -15,10 +15,8 @@ import javax.servlet.http.HttpSession;
 @RestController
 public class AdminController {
 
-
     @Autowired
     private CategoryService categoryService;
-
 
     @PostMapping("/api/admin/category")
     public ResponseEntity <?> categoriesCreation(@RequestParam("categoryTitle") String categoryTitle, @RequestParam("description") String description, HttpSession session) {
@@ -28,8 +26,6 @@ public class AdminController {
             return new ResponseEntity <> ( "Please Login first to access this endpoint!", HttpStatus.UNAUTHORIZED );
 
         } else {
-
-            if (currUser.getRole ().equals ( "admin" )) {
             System.out.println ( "role : " + currUser.getRole () );
             if (currUser.getRole ().equalsIgnoreCase ( "admin" )) {
                 int id = (int) System.currentTimeMillis () / 1000;
@@ -43,11 +39,10 @@ public class AdminController {
             } else {
                 return new ResponseEntity <> ( "You do not have rights to add categories.", HttpStatus.UNAUTHORIZED );
             }
-
-
         }
 
     }
+
 }
 
 

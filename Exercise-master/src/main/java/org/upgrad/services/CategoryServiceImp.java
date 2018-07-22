@@ -13,8 +13,6 @@ public class CategoryServiceImp implements CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    public Category createCategory(Category category) {
-        return null;
     public void createCategory(Category category) {
         categoryRepository.addCategory ( category.getTitle (), category.getDescription () );
 

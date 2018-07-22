@@ -5,7 +5,7 @@ import org.upgrad.model.Category;
 import java.util.List;
 
 public interface CategoryService {
-    Category createCategory(Category category);
+    void  createCategory(Category category);
 
     List <Category> getAllCategories();
 }
