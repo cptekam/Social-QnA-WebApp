@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6570fdf-4d0b-4de7-9129-59258839edfa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/AnswerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/QuestionRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/UserProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/UserProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/QuestionServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/QuestionServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserProfileServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserProfileServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/UserServicesImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserServicesImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/upgrad/controllers/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/upgrad/controllers/CommentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/repository/UserProfileRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/AnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/AnswerServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/QuestionServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserProfileServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserProfileServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/upgrad/services/UserServiceImp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,64 +30,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AnswerServiceImp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerServiceImp.java">
+      <file leaf-file-name="CommentControllerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/upgrad/controllers/CommentControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="431">
+              <caret line="169" column="61" lean-forward="true" selection-start-line="169" selection-start-column="61" selection-end-line="169" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="method#addCommentWithoutLogin#0;class#CommentControllerTest#0" />
+                <element signature="method#addCommentWithLogin#0;class#CommentControllerTest#0" />
+                <element signature="method#editCommentWithoutLogin#0;class#CommentControllerTest#0" />
+                <element signature="method#editCommentWithoutAuthorization#0;class#CommentControllerTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/repository/QuestionRepository.java">
+      <file leaf-file-name="CommentServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/UserController.java">
+      <file leaf-file-name="CommentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AnswerController.java">
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/model/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="372">
+              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+              <folding>
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1606#1607#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/repository/AnswerRepository.java">
+      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+            <state relative-caret-position="393">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="66" column="58" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -123,8 +162,13 @@
         <option value="$PROJECT_DIR$/src/main/java/org/upgrad/repository/QuestionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/upgrad/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/upgrad/controller/AnswerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/upgrad/repository/AnswerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/services/AnswerServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/model/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/upgrad/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/upgrad/controllers/CommentControllerTest.java" />
       </list>
     </option>
   </component>
@@ -141,7 +185,9 @@
     <option name="width" value="1280" />
     <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -178,15 +224,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quora" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercise-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,11 +275,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.quora">
+  <component name="RunManager" selected="JUnit.CommentControllerTest.editCommentWithUserAuthorization">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AdminControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.addCommentWithLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quora" />
       <extension name="coverage">
         <pattern>
@@ -231,31 +290,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.AdminControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="AdminControllerTest.createCategoryWithAdminAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quora" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.upgrad.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.AdminControllerTest" />
-      <option name="METHOD_NAME" value="createCategoryWithAdminAuthorization" />
+      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.CommentControllerTest" />
+      <option name="METHOD_NAME" value="addCommentWithLogin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -266,7 +302,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="AdminControllerTest.createCategoryWithNoAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.editCommentWithAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quora" />
       <extension name="coverage">
         <pattern>
@@ -277,8 +313,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.AdminControllerTest" />
-      <option name="METHOD_NAME" value="createCategoryWithNoAuthorization" />
+      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.CommentControllerTest" />
+      <option name="METHOD_NAME" value="editCommentWithAuthorization" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -289,7 +325,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="UserControllerTest.getAllNotificationsWithLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.editCommentWithUserAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quora" />
       <extension name="coverage">
         <pattern>
@@ -300,8 +336,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.UserControllerTest" />
-      <option name="METHOD_NAME" value="getAllNotificationsWithLogin" />
+      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.CommentControllerTest" />
+      <option name="METHOD_NAME" value="editCommentWithUserAuthorization" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -312,7 +348,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="UserControllerTest.getAllNotificationsWithoutLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.editCommentWithoutAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quora" />
       <extension name="coverage">
         <pattern>
@@ -323,8 +359,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.UserControllerTest" />
-      <option name="METHOD_NAME" value="getAllNotificationsWithoutLogin" />
+      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.CommentControllerTest" />
+      <option name="METHOD_NAME" value="editCommentWithoutAuthorization" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CommentControllerTest.editCommentWithoutLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.upgrad.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.upgrad.controllers" />
+      <option name="MAIN_CLASS_NAME" value="org.upgrad.controllers.CommentControllerTest" />
+      <option name="METHOD_NAME" value="editCommentWithoutLogin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -379,19 +438,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.quora" />
-      <item itemvalue="JUnit.AdminControllerTest.createCategoryWithNoAuthorization" />
-      <item itemvalue="JUnit.AdminControllerTest.createCategoryWithAdminAuthorization" />
-      <item itemvalue="JUnit.AdminControllerTest" />
-      <item itemvalue="JUnit.UserControllerTest.getAllNotificationsWithLogin" />
-      <item itemvalue="JUnit.UserControllerTest.getAllNotificationsWithoutLogin" />
+      <item itemvalue="JUnit.CommentControllerTest.addCommentWithLogin" />
+      <item itemvalue="JUnit.CommentControllerTest.editCommentWithoutAuthorization" />
+      <item itemvalue="JUnit.CommentControllerTest.editCommentWithoutLogin" />
+      <item itemvalue="JUnit.CommentControllerTest.editCommentWithAuthorization" />
+      <item itemvalue="JUnit.CommentControllerTest.editCommentWithUserAuthorization" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserControllerTest.getAllNotificationsWithoutLogin" />
-        <item itemvalue="JUnit.UserControllerTest.getAllNotificationsWithLogin" />
-        <item itemvalue="JUnit.AdminControllerTest" />
-        <item itemvalue="JUnit.AdminControllerTest.createCategoryWithAdminAuthorization" />
-        <item itemvalue="JUnit.AdminControllerTest.createCategoryWithNoAuthorization" />
+        <item itemvalue="JUnit.CommentControllerTest.editCommentWithUserAuthorization" />
+        <item itemvalue="JUnit.CommentControllerTest.editCommentWithAuthorization" />
+        <item itemvalue="JUnit.CommentControllerTest.editCommentWithoutLogin" />
+        <item itemvalue="JUnit.CommentControllerTest.editCommentWithoutAuthorization" />
+        <item itemvalue="JUnit.CommentControllerTest.addCommentWithLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -428,11 +487,50 @@
       <option name="project" value="LOCAL" />
       <updated>1532195340468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merged the code from all team">
+      <created>1532279242931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532279242931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CommentControllerTest_editCommentWithoutAuthorization - 2018.07.22 at 23h 17m 26s.xml">
+      <configuration name="CommentControllerTest.editCommentWithoutAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithoutLogin - 2018.07.22 at 23h 18m 39s.xml">
+      <configuration name="CommentControllerTest.editCommentWithoutLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 19m 40s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 20m 52s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 22m 32s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 25m 15s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 26m 48s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithAuthorization - 2018.07.22 at 23h 27m 53s.xml">
+      <configuration name="CommentControllerTest.editCommentWithAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithUserAuthorization - 2018.07.22 at 23h 28m 50s.xml">
+      <configuration name="CommentControllerTest.editCommentWithUserAuthorization" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentControllerTest_editCommentWithUserAuthorization - 2018.07.22 at 23h 31m 30s.xml">
+      <configuration name="CommentControllerTest.editCommentWithUserAuthorization" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6999000" />
+    <option name="totallyTimeSpent" value="10370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -504,48 +602,28 @@
     <MESSAGE value="Pulled the code from master branch" />
     <MESSAGE value="1.categoriesCreation - &quot;/api/admin/category&quot; implemented successfully.&#10;------------------------------------------------------&#10;UNIT Test CASES  PERFORMED&#10;----------------------------------- &#10;1. createCategoryWithNoAuthentication- SUCCESSFULLY TESTED&#10;2. createCategoryWithNoAuthorization - SUCCESSFULY TESTED&#10;3. createCategoryWithAdminAuthorization- SUCCESSFULLY TESTED" />
     <MESSAGE value="answer controller implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="answer controller implemented" />
+    <MESSAGE value="merged the code from all team" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged the code from all team" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/CommentController.java</url>
+          <line>42</line>
+          <properties class="org.upgrad.controller.CommentController" method="editComment">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/quora.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/model/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -768,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -859,21 +930,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="776">
-          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AnswerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/repository/AnswerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -888,8 +959,67 @@
             <element signature="imports" expanded="true" />
             <element signature="e#860#861#0" expanded="true" />
             <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="66" column="58" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/services/CommentServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/upgrad/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/upgrad/controllers/CommentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="169" column="61" lean-forward="true" selection-start-line="169" selection-start-column="61" selection-end-line="169" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addCommentWithoutLogin#0;class#CommentControllerTest#0" />
+            <element signature="method#addCommentWithLogin#0;class#CommentControllerTest#0" />
+            <element signature="method#editCommentWithoutLogin#0;class#CommentControllerTest#0" />
+            <element signature="method#editCommentWithoutAuthorization#0;class#CommentControllerTest#0" />
           </folding>
         </state>
       </provider>

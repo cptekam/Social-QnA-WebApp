@@ -14,6 +14,7 @@ public class Comment {
     private int user_id;
     private int answer_id;
     private Date modifiedOn;
+    private User user;
 
     public Comment() {
     }
@@ -74,5 +75,13 @@ public class Comment {
 
     public void setModifiedOn(Date modifiedOn) {
         this.modifiedOn = modifiedOn;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
