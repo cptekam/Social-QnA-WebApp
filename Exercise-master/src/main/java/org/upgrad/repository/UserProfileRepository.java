@@ -22,4 +22,9 @@ public interface UserProfileRepository extends CrudRepository <UserProfile, Inte
 
     @Query(nativeQuery = true, value = "SELECT * from user_profile WHERE user_id = ?1")
     Iterable <UserProfile> getUserProfileByUId(int id);
+
+    @Transactional
+    @Modifying
+    @Query(nativeQuery = true, value = " DELETE from user_profile WHERE user_id = ?1")
+    void deleteUserProfileById(int userId);
 }

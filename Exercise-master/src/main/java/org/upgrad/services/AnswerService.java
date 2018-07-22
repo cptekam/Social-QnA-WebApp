@@ -12,4 +12,8 @@ public interface AnswerService {
     int findUserIdfromAnswer(int answerId);
 
     void deleteAnswer(Integer answerId);
+
+    Iterable <Answer> getAllAnswersByUser(int userId);
+
+    Integer isQuestionIdForAnswerValid(int questionId);
 }

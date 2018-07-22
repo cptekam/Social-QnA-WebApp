@@ -16,7 +16,7 @@ public class AnswerServiceImp implements AnswerService {
 
     @Override
     public List <Answer> getAllAnswersToQuestion(Integer questionId) {
-        return null;
+        return answerRepository.getAllAnswersToQuestionId ( questionId );
     }
 
     @Override
@@ -33,5 +33,18 @@ public class AnswerServiceImp implements AnswerService {
     @Override
     public int findUserIdfromAnswer(int answerId) {
         return answerRepository.findUserIdfromAnswer ( answerId );
+    }
+
+    // This method retrieves all the answers posted by particular user id
+    @Override
+    public Iterable <Answer> getAllAnswersByUser(int userId) {
+        return answerRepository.getAllAnswersByUserId ( userId );
+    }
+
+    // This method checks if there are any answers for the given question if
+    @Override
+    public Integer isQuestionIdForAnswerValid(int questionId) {
+        return answerRepository.getCountOfAnswersForQuestion ( questionId );
+
     }
 }

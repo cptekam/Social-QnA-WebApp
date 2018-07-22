@@ -27,6 +27,11 @@ public class UserController {
     @Autowired
     private NotificationService notificationService;
 
+    /*
+     * This signup endpoint implemented to register into the app.
+     * lastName,aboutme,contact numbers are optional parameters to register
+     * Also by default from the app registered user role is a 'user' & cant be 'admin'
+     */
     @PostMapping("/api/user/signup")
     public ResponseEntity <?> postUserSignup(@RequestParam("firstName") String firstName, String lastName, @RequestParam("userName") String userName, @RequestParam("email") String email, @RequestParam("password") String password, @RequestParam("country") String country, String aboutMe, @RequestParam("dob") String dateOfbirth, String contactNumber) {
         String userNameResult = String.valueOf ( userService.findUserByUsername ( userName ) );
@@ -54,6 +59,10 @@ public class UserController {
         }
     }
 
+    /*
+     * This login endpoint is implemented to login into the app with username and password
+     *  It checks for role whether login as admin or user
+     */
     @PostMapping("/api/user/login")
     public ResponseEntity <?> postUserSignin(@RequestParam("userName") String userName, @RequestParam("password") String password, HttpSession session) {
 
@@ -74,10 +83,13 @@ public class UserController {
         }
     }
 
+    /*
+     * This endpoint is implemented to logout from the app
+     * It checks if user session exists or not , if it is then logout from the app
+     */
     @PostMapping("/api/user/logout")
     public ResponseEntity <String> postUserSignout(HttpSession session) {
-        if (session.getAttribute ( "currUser" ) == null)
-            return new ResponseEntity <> ( "You are currently not logged in", HttpStatus.UNAUTHORIZED );
+        if (session.getAttribute ( "currUser" ) == null) return new ResponseEntity <> ( "You are currently not logged in", HttpStatus.UNAUTHORIZED );
         else {
             session.removeAttribute ( "currUser" );
             session.invalidate ();
@@ -85,6 +97,10 @@ public class UserController {
         }
     }
 
+    /*
+     * This end point is implemented to get the user details other than username and password
+     * if user exists then it display the user profile details
+     */
     @GetMapping("/api/user/userprofile/{userId}")
     public ResponseEntity <?> getUserProfile(@PathVariable("userId") int id, HttpSession session) {
 

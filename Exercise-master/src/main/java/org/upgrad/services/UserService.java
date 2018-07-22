@@ -8,8 +8,6 @@ public interface UserService {
 
     int findUserId();
 
-    int findRecentUserId(String userName);
-
     String findUserByUsername(String userName);
 
     String findUserByEmail(String email);
@@ -17,6 +15,12 @@ public interface UserService {
     String findUserPassword(String userName);
 
     String findUserRole(String userName);
+
+    String findUserById(int id);
+
+    int findUserIdByName(String userName);
+
+    void deleteUserDetailsById(int userId);
 
     User getUserDetail(Integer user_id);
 

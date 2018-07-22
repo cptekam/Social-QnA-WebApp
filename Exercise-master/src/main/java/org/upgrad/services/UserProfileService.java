@@ -10,4 +10,6 @@ public interface UserProfileService {
     String findUserProfileById(int id);
 
     Iterable <UserProfile> getUserProfile(int id);
+
+    void deleteUserProfileDetailsById(int id);
 }
