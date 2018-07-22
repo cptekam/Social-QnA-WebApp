@@ -112,4 +112,28 @@ public class User implements Serializable {
     public String toString() {
         return "User{" + "id=" + id + ", userName='" + userName + '\'' + ", email='" + email + '\'' + ", password='" + password + '\'' + ", role='" + role + '\'' + ", questions=" + questions + ", notifications=" + notifications + ", answers=" + answers + '}';
     }
+
+    public List <Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List <Question> questions) {
+        this.questions = questions;
+    }
+
+    public List <Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List <Answer> answers) {
+        this.answers = answers;
+    }
+
+    public List <Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List <Notification> notifications) {
+        this.notifications = notifications;
+    }
 }

@@ -13,15 +13,13 @@ public class QuestionServiceImp implements QuestionService {
     @Autowired
     private QuestionRespository questionRespository;
 
-    @Autowired
-    private QuestionRepository questionRepository;
     @Override
     public List <Question> getAllQuestionsByCategory(Integer categoryId) {
-        return questionRepository.getAllQuestionsByCategory(categoryId);
+        return questionRespository.getAllQuestionsByCategory(categoryId);
     }
 
     @Override
     public List <Question> getAllQuestions() {
-        return null;
+        return questionRespository.getAllQuestions ();
     }
 }
